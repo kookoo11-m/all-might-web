@@ -1,0 +1,63 @@
+<html>
+<head>
+
+ <link rel="shortcut icon" href="3.png">
+<link rel="stylesheet" href="css.css">
+</head>
+<body>
+    
+    <title>login to all might</title>
+    <div class="all">
+        
+        
+        <h1>
+            Login
+        </h1>
+        <h4>to all mighty</h4>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+ <div class="thediv"><button class="but1" onclick="showd()">❤️donate❤️</button></div>
+        
+    <div class="all">
+
+        <img src="3.jpg" alt="allmight" class="img"> 
+        <br> 
+       <br>
+        <input class="in" type="tel" placeholder="      enter phone number" id="in" maxlength="11">
+        <br>
+        <br>
+        
+        <button class="but" onclick="login()">Enter</button>
+    </div>
+
+</body>
+</html>
+<script>
+function login(){
+    var n=document.getElementById("in").value
+    
+    if(n.length==0){
+    
+    return;
+    }
+    if(n.length>11||n.length<11){
+        alert("the length is not valid")
+        return;
+    }
+    if(n.substring(0,2)!="09"){
+    alert ("the first two digits are not valid (exampil:09123456789")
+    return;
+    }
+    alert("welcome")
+}
+function showd(){
+alert("my bitcoin walet adress : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \nthanks")
+}
+</script>
